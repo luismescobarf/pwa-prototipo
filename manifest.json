@@ -1,0 +1,23 @@
+{
+    "name": "App Compras",
+    "short_name": "App Compras",
+    "start_url": "/pwa/",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "description": "App para listado de compras",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "./assets/suministros.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "./assets/checklist.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

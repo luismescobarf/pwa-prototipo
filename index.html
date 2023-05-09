@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>App Lista de Mercado</title>
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="./estilos.css">
+
+    <!-- Wrapper para IndexedDB -->
+    <script src="./dexie.min.js"></script>
+
+    <!-- Enlazar manifest para dispositivos -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Controlador de la aplicación -->
+    <!-- <script type="module" src="./main.js"></script>     -->
+
+    <!-- Revisar si el navegador soporta ServiceWorkers -->
+    <script>
+        if ('serviceWorker' in navigator) {
+           window.addEventListener('load', () => {
+              navigator.serviceWorker.register('./sw.js');
+           });
+         }
+    </script>
+
+</head>
+<body>
+    <nav>
+        <p>Mi Lista de Mercado</p>
+        <img src="./assets/checklist.png" alt="Imagen checklist">
+    </nav>     
+
+    <div class="contenedorPrincipal">
+        <form id="formularioItems">
+            <label>
+                Nombre Ítem:
+                <input type="text" id="inputNombre" required>            
+            </label>
+            <label>
+                Cantidad:
+                <input type="number" id="inputCantidad" value="1">            
+            </label>
+            <label>
+                Precio:
+                <input type="text" id="inputPrecio" value="0">        
+            </label>
+            
+            <button type="submit" id="btn-agregar-producto">
+                Agregar
+            </button>
+            
+        </form>
+    </div>
+
+    <div id="listadoItems">
+       
+        <!-- <div class="item">
+            <label>
+                <input type="checkbox" class="checkbox" checked>       
+            </label>
+            <div class="infoItem" >
+                <p>Paquete de Arepas</p>
+                <p>$5000 x 2</p>
+            </div>
+            <button class="btn-borrar">X</button>
+        </div> 
+
+        <div class="item comprado">
+            <label>
+                <input type="checkbox" class="checkbox" checked>       
+            </label>
+            <div class="infoItem" >
+                <p>Galletas</p>
+                <p>$2500 x 1</p>
+            </div>
+            <button class="btn-borrar">X</button>
+        </div>  -->
+
+        <!-- <div id="totalLista" >Precio total: $12500</div> -->
+        
+    </div>
+    
+    <div id="totalLista" ></div>
+    
+    <script src="./main.js"></script>
+    
+</body>
+</html>

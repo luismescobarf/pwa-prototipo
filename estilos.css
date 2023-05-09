@@ -1,0 +1,102 @@
+/* Ocupar todo el espacio -> Estilo App */
+* {
+    margin: unset;
+    padding: unset;
+}
+
+/* Fondo suave */
+body {
+    background: lightgray;
+}
+
+/* Estilizado de la parte superior */
+nav {
+    background-color: lightblue;
+    height: 3rem;
+    line-height: 3rem;
+    color: white;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav img {
+    size: fit-content;
+}
+
+.contenedorPrincipal {
+    padding: 1rem;
+}
+
+#formularioItems label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#formularioItems input {
+    height: 2rem;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#inputCantidad, #inputPrecio {
+    width: 3rem;
+}
+
+#btn-agregar-producto {
+    border: unset;
+    background-color: grey;
+    color: #fff;
+    padding: 0.5rem;    
+}
+
+#listadoItems {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #eaeaea;
+    margin-bottom: 0.5rem;
+}
+
+.checkbox {
+    height: 100%;
+    width: 2.5rem;
+}
+
+.itemInfo {
+    text-align: center;
+}
+
+.btn-borrar {
+    margin: 0 0 0 auto;
+    border: unset;
+    background-color: lightcoral;
+    color: white;
+    font-size: 0.8rem;
+    width: 2.5rem;
+    height: 100%;
+}
+
+.btn-borrar:active{
+    margin-top: 3px;
+}
+
+.comprado {
+    background-color: green;
+    color: white;
+}
+
+.comprado p{
+    text-decoration: line-through;
+}
+
+
+
+
+
+

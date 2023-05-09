@@ -1,0 +1,28 @@
+brew install node
+
+npm
+
+npm install workbox-cli --global
+
+workbox wizard
+    What is the root of your web app (i.e. which directory do you deploy)? Manually enter path
+    ? Please enter the path to the root of your web app: ./
+    ? Which file types would you like to precache? png, js, css, html
+    ? Where would you like your service worker file to be saved? sw.js
+    ? Where would you like to save these configuration options? workbox-config.js
+    ? Does your web app manifest include search parameter(s) in the 'start_url', other than 'utm_' or 
+    'fbclid' (like '?source=pwa')? No
+    To build your service worker, run
+
+    workbox generateSW workbox-config.js
+
+    as part of a build process. See https://goo.gl/fdTQBf for details.
+    You can further customize your service worker by making changes to workbox-config.js. See https://goo.gl/gVo87N for details.
+
+workbox generateSW workbox-config.js 
+    Using configuration from /Users/luismiguelescobar/Dropbox/UniLibre/SM/pwaListaCompras/workbox-config.js.
+    The service worker files were written to:
+    • /Users/luismiguelescobar/Dropbox/UniLibre/SM/pwaListaCompras/sw.js
+    • /Users/luismiguelescobar/Dropbox/UniLibre/SM/pwaListaCompras/sw.js.map
+    • /Users/luismiguelescobar/Dropbox/UniLibre/SM/pwaListaCompras/workbox-7b9be67b.js
+    • /Users/luismiguelescobar/Dropbox/UniLibre/SM/pwaListaCompras/workbox-7b9be67b.js.map
